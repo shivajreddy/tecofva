@@ -1,5 +1,7 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -10,6 +12,7 @@ import Analytics from '@vercel/analytics/astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
         <Analytics />
+        <SpeedInsights />
 		<title>Architectonic</title>
 	</head>
 	<body>
