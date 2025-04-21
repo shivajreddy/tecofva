@@ -5,7 +5,7 @@ import background from '../assets/background.svg';
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
-        <p>under constrution ⚒️</p>
+        <h1> UNDER CONSTRUTION⚒️  </h1>
 	</main>
 </div>
 
@@ -16,10 +16,13 @@ import background from '../assets/background.svg';
         height: calc(100vh - var(--header-height));
 	}
 
-	main {
-		display: flex;
-		justify-content: center;
-	}
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* vertical centering */
+        height: 100%;
+    }
+
 
     #background {
 		position: fixed;
