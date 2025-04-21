@@ -2,6 +2,8 @@
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
 const { title, description } = Astro.props;
+
+import NavBar from '../components/NavBar.astro';
 ---
 
 <!doctype html>
@@ -16,15 +18,24 @@ const { title, description } = Astro.props;
 		<title>Architectonic</title>
 	</head>
 	<body>
+        <NavBar />
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
-	body {
+    body
+    {
 		margin: 0;
+        padding: 0;
 		width: 100%;
 		height: 100%;
+        box-sizing: border-box;
 	}
+
+    p {
+		margin: 0;
+        padding: 0;
+    }
 </style>
